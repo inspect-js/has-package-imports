@@ -7,6 +7,9 @@
 		".": "./index.js",
 		"./package.json": "./package.json"
 	},
+	"imports": {
+		"#yes": "./yes.js"
+	},
 	"scripts": {
 		"lint": "eslint .",
 		"pretest": "npm run lint",
