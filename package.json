@@ -1,0 +1,29 @@
+{
+	"name": "has-package-imports",
+	"version": "0.0.0",
+	"description": "Does the current node version have support for the \"imports\" field in package.json?",
+	"main": "index.js",
+	"exports": {
+		".": "./index.js",
+		"./package.json": "./package.json"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/inspect-js/has-package-imports.git"
+	},
+	"keywords": [
+		"package.json",
+		"package",
+		"imports",
+		"fields"
+	],
+	"author": "Jordan Harband <ljharb@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/inspect-js/has-package-imports/issues"
+	},
+	"homepage": "https://github.com/inspect-js/has-package-imports#readme"
+}
