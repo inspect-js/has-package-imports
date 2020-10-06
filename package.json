@@ -13,7 +13,9 @@
 	"scripts": {
 		"lint": "eslint .",
 		"pretest": "npm run lint",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"tests-only": "tape 'test/**'",
+		"test": "npm run tests-only",
+		"posttest": "aud --production"
 	},
 	"repository": {
 		"type": "git",
@@ -33,6 +35,9 @@
 	"homepage": "https://github.com/inspect-js/has-package-imports#readme",
 	"devDependencies": {
 		"@ljharb/eslint-config": "^17.2.0",
-		"eslint": "^7.10.0"
+		"aud": "^1.1.2",
+		"eslint": "^7.10.0",
+		"semver": "^6.3.0",
+		"tape": "^5.0.1"
 	}
 }

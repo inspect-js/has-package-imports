@@ -1,0 +1,23 @@
+version: ~> 1.0
+language: node_js
+os:
+ - linux
+import:
+ - ljharb/travis-ci:node/all.yml
+ - ljharb/travis-ci:node/pretest.yml
+ - ljharb/travis-ci:node/posttest.yml
+matrix:
+  exclude:
+    - node_js: "14.6"
+      env: TEST=true ALLOW_FAILURE=true
+    - node_js: "14.5"
+      env: TEST=true ALLOW_FAILURE=true
+    - node_js: "12.19"
+      env: TEST=true ALLOW_FAILURE=true
+  include:
+    - node_js: "14.6"
+      env: TEST=true
+    - node_js: "14.5"
+      env: TEST=true
+    - node_js: "12.19"
+      env: TEST=true
