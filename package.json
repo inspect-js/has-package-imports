@@ -13,7 +13,7 @@
 	"scripts": {
 		"prepublishOnly": "safe-publish-latest",
 		"prepublish": "not-in-publish || npm run prepublishOnly",
-		"lint": "eslint .",
+		"lint": "eslint --ext=js,mjs .",
 		"pretest": "npm run lint",
 		"tests-only": "nyc tape 'test/**/*.js'",
 		"test": "npm run tests-only",
@@ -41,14 +41,14 @@
 	},
 	"homepage": "https://github.com/inspect-js/has-package-imports#readme",
 	"devDependencies": {
-		"@ljharb/eslint-config": "^18.0.0",
+		"@ljharb/eslint-config": "^20.1.0",
 		"aud": "^1.1.5",
 		"auto-changelog": "^2.3.0",
-		"eslint": "^7.32.0",
+		"eslint": "^8.4.1",
 		"nyc": "^10.3.2",
-		"safe-publish-latest": "^1.1.5",
+		"safe-publish-latest": "^2.0.0",
 		"semver": "^6.3.0",
-		"tape": "^5.3.1"
+		"tape": "^5.3.2"
 	},
 	"auto-changelog": {
 		"output": "CHANGELOG.md",
